@@ -2,7 +2,7 @@
 
 FILES=".bashrc .gitconfig .gitignore_global"
 
-DOTFILES=$(dirname $0)
+DOTFILES=$(cd $(dirname $0) && pwd)
 
 for f in $FILES; do
   ln -sf $DOTFILES/$f ~/
