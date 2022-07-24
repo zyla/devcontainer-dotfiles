@@ -18,11 +18,7 @@ set -o vi
 
 HISTSIZE=100000
 HISTFILESIZE=1000000 
-if [ $colorterm = yes ]; then
-  PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-  PS1='\h:\w$ '
-fi
+PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 maybe_source() {
 	[ -f "$1" ] && source "$1"
