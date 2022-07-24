@@ -1,0 +1,11 @@
+# Global .gitignore
+
+# vim swapfiles
+.*.swp
+
+# ctags
+tags
+
+# perf
+perf.data
+perf.data.old
