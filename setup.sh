@@ -10,3 +10,6 @@ done
 
 mkdir -p ~/.config
 ln -sfv $DOTFILES/.config/nvim ~/.config/
+
+nvim +:PlugInstall
+nvim '+:CocInstall coc-rust-analyzer coc-json'

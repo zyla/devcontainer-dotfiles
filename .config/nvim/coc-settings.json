@@ -1,4 +1,6 @@
 {
+  "rust-analyzer.cargo.noDefaultFeatures": true,
+  "rust-analyzer.check.allTargets": false,
   "languageserver": {
     "purescript": {
       "command": "purescript-language-server",
@@ -41,6 +43,7 @@
     "typescript.tsx",
     "javascript",
     "purescript",
-    "haskell"
+    "haskell",
+    "rust"
   ]
 }
