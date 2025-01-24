@@ -19,6 +19,7 @@ if ! which nvim; then
   PREFIX=/usr/local
   curl -sSL https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux64.tar.gz | sudo tar xz -C "$PREFIX"
   sudo ln -sf "$PREFIX/nvim-linux64/bin/nvim" "$PREFIX/bin"
+  echo "Installed: $(nvim --version)"
 fi
 
 nvim +PlugInstall +qall
