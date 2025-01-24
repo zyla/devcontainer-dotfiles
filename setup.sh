@@ -13,7 +13,8 @@ done
 mkdir -p ~/.config
 ln -sfv $DOTFILES/.config/nvim ~/.config/
 
-if ! nvim --version; then
+if ! which nvim; then
+  echo "Installing neovim"
   mkdir -p ~/.local/bin
   PREFIX=/usr/local
   curl -sSL https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux64.tar.gz | sudo tar xz -C "$PREFIX"
