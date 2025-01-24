@@ -90,34 +90,8 @@ let g:camelcasemotion_key = ','
 " Fast switching between alternate files
 nnoremap <Tab> <C-^>
 
-source ~/.config/nvim/autoload/plug.vim
-
 colorscheme nofrils-light
 colorscheme desert | set bg=light
-
-" Specify a directory for plugins
-" - For Neovim: stdpath('data') . '/plugged'
-" - Avoid using standard Vim directory names like 'plugin'
-call plug#begin(stdpath('data') . '/plugged')
-
-" Make sure you use single quotes
-" TODO: pin these, or just use vim packages feature
-
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-markdown'
-Plug 'benizi/vim-automkdir'
-Plug 'bkad/CamelCaseMotion'
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
-" TODO: Plug 'tpope/vim-rhubarb' - requires `hub`, find replacement which uses
-" `gh`
-
-" TODO: add Purescript language server
-
-" Initialize plugin system
-call plug#end()
 
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b

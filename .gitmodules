@@ -1,3 +1,21 @@
 [submodule ".config/nvim/pack/nvim/start/nvim-lspconfig"]
 	path = .config/nvim/pack/nvim/start/nvim-lspconfig
 	url = https://github.com/neovim/nvim-lspconfig
+[submodule ".config/nvim/pack/nvim/start/fzf.vim"]
+	path = .config/nvim/pack/nvim/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule ".config/nvim/pack/nvim/start/fzf"]
+	path = .config/nvim/pack/nvim/start/fzf
+	url = https://github.com/junegunn/fzf
+[submodule ".config/nvim/pack/nvim/start/vim-fugitive"]
+	path = .config/nvim/pack/nvim/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule ".config/nvim/pack/nvim/start/vim-markdown"]
+	path = .config/nvim/pack/nvim/start/vim-markdown
+	url = https://github.com/tpope/vim-markdown
+[submodule ".config/nvim/pack/nvim/start/vim-automkdir"]
+	path = .config/nvim/pack/nvim/start/vim-automkdir
+	url = https://github.com/benizi/vim-automkdir
+[submodule ".config/nvim/pack/nvim/start/CamelCaseMotion"]
+	path = .config/nvim/pack/nvim/start/CamelCaseMotion
+	url = https://github.com/bkad/CamelCaseMotion
