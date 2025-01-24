@@ -129,5 +129,8 @@ sunmap e
 sunmap ge
 
 lua << EOF
-require'lspconfig'.pyright.setup{}
+local lspconfig = require'lspconfig'
+lspconfig.pyright.setup{}
+lspconfig.ts_ls.setup{}
+lspconfig.rust_analyzer.setup{}
 EOF
