@@ -13,6 +13,8 @@ done
 mkdir -p ~/.config
 ln -sfv $DOTFILES/.config/nvim ~/.config/
 
+git submodule update --init
+
 if ! which nvim; then
   echo "Installing neovim"
   mkdir -p ~/.local/bin
@@ -22,5 +24,4 @@ if ! which nvim; then
   echo "Installed: $(nvim --version)"
 fi
 
-#nvim +PlugInstall +qall
-#nvim '+CocInstall -sync coc-rust-analyzer coc-json coc-tsserver coc-pyright' +qall
+nvim +PlugInstall +qall
