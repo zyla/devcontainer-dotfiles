@@ -22,5 +22,5 @@ if ! which nvim; then
   echo "Installed: $(nvim --version)"
 fi
 
-nvim +PlugInstall +qall
-nvim '+CocInstall -sync coc-rust-analyzer coc-json coc-tsserver coc-pyright' +qall
+#nvim +PlugInstall +qall
+#nvim '+CocInstall -sync coc-rust-analyzer coc-json coc-tsserver coc-pyright' +qall
