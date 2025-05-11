@@ -90,8 +90,9 @@ let g:camelcasemotion_key = ','
 " Fast switching between alternate files
 nnoremap <Tab> <C-^>
 
-colorscheme nofrils-light
-colorscheme desert | set bg=light
+"colorscheme nofrils-light
+colorscheme vim
+set bg=light
 
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
