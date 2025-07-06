@@ -109,4 +109,5 @@ lspconfig.pyright.setup{}
 lspconfig.ts_ls.setup{}
 lspconfig.rust_analyzer.setup{}
 lspconfig.gopls.setup{}
+lspconfig.postgres_lsp.setup{}
 EOF
