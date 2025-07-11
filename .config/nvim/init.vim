@@ -48,7 +48,6 @@ au BufRead,BufNewFile *.hbs set filetype=html
 au BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 au BufRead,BufNewFile *.ll set filetype=llvm
 au BufRead /usr/include/c++/* set ft=cpp
-au BufRead,BufNewFile *.ts set ft=javascript
 au BufRead COMMIT_EDITMSG exe "normal! gg"
 filetype plugin indent on
 
