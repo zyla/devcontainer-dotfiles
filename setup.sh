@@ -17,6 +17,14 @@ git submodule update --init
 
 PREFIX=/usr/local
 
+# no need for sudo if we're root.
+# And in some envs (e.g. runpod) we're root and there's no sudo.
+if [ "$(id -u)" = 0 ]; then
+  sudo() {
+    "$@"
+  }
+fi
+
 if ! which nvim; then
   echo "Installing neovim"
   curl -sSL https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux64.tar.gz | sudo tar xz -C "$PREFIX"
