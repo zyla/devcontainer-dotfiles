@@ -4,6 +4,7 @@ if [ -z "$LESS" ]; then
 	export LESS="-S -R"
 fi
 
+export PATH="${HOME}/.asdf/shims:${PATH}"
 export LANG=C.UTF-8 LC_ALL=C.UTF-8
 
 # If not running interactively, don't do anything
@@ -33,3 +34,9 @@ export PAGER=less
 export EDITOR=vim
 
 alias :e=nvim
+
+WORKDIR=$(cat ~/WORKDIR)
+
+alias w='cd $WORKDIR'
+alias yolo='claude --dangerously-skip-permissions'
+alias wy='w; yolo'
